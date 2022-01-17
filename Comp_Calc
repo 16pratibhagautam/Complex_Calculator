@@ -1,0 +1,41 @@
+import java.util.*;
+public class Main{
+    public static void main(String args[]){
+       Scanner obj=new Scanner(System.in);
+       System.out.println("Enter first input: ");
+       int num1=obj.nextInt();
+       System.out.println("Enter second input: ");
+       int num2=obj.nextInt();
+       System.out.println("Enter your choice:  \nChoose 1 for ADDITION \nChoose 2 for SUBTRACTION \nChoose 3 for MULTIPLICATION \nChoose 4 for DIVISION");
+       int str=obj.nextInt();
+       switch(str){
+           case 1:
+               System.out.println("Addition is :"+add(num1,num2));
+               break;
+           case 2:
+               System.out.println("Subtraction is :"+sub(num1,num2));
+               break;
+           case 3:
+               System.out.println("Multiplication is :"+mul(num1,num2));
+               break;
+           case 4:
+               System.out.println("Division is :"+div(num1,num2));
+               break;
+           default:
+           System.out.println("You have entered wrong choice");
+           break;
+       }
+    }
+    static double add(int x, int y){
+        return (x+y);
+    }
+    static double sub(int x, int y){
+        return (x-y);
+    }
+    static double mul(int x, int y){
+        return (x*y);
+    }
+    static double div(int x, int y){
+        return (x/y);
+    }
+}
